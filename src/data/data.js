@@ -65,6 +65,13 @@ const MenuProduks = [
   },
 ];
 
+const imagesGalery = [
+  { src: '/14.jpeg', className: 'box1' },
+  { src: '/14.jpeg', className: 'box2' },
+  { src: '/14.jpeg', className: 'box1' },
+  { src: '/14.jpeg', className: 'box2' },
+];
+
 function dataHeroSection() {
   return heroSectiondata;
 }
@@ -77,4 +84,8 @@ function MenuProduk() {
   return MenuProduks;
 }
 
-export { dataHeroSection, DataProdukSlide, MenuProduk };
+function imageGalery() {
+  return imagesGalery;
+}
+
+export { dataHeroSection, DataProdukSlide, MenuProduk, imageGalery };

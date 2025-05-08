@@ -2,6 +2,7 @@
 @import './heroimage.css';
 @import './service.css';
 @import './itemProduk.css';
+@import './galery.css';
 
 * {
   padding: 0;
