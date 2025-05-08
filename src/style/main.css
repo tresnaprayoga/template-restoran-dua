@@ -1,5 +1,7 @@
 @import './navbar.css';
 @import './heroimage.css';
+@import './service.css';
+@import './itemProduk.css';
 
 * {
   padding: 0;

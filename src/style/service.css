@@ -1,0 +1,128 @@
+.service-list {
+  text-align: center;
+  font-family: 'Poppins';
+  font-weight: normal;
+  width: 90%;
+  margin: 30px auto;
+}
+
+.service-list h2 {
+  font-family: 'Poppins';
+  font-weight: normal;
+  text-align: center;
+  color: brown;
+}
+
+.service-list p {
+  font-family: 'Poppins';
+  font-weight: normal;
+  text-align: center;
+  font-size: 12px;
+}
+
+.food-card {
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+
+  flex: 1 1 300px;
+}
+
+.food-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  background: #ff5733;
+}
+
+.food-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.food-title {
+  margin: 0.5rem 0 0.2rem;
+  color: #2b104e;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.food-author {
+  color: #9a8fb8;
+  font-size: 0.9rem;
+}
+
+.food-list-slider {
+  padding: 2rem;
+  max-width: 100%;
+}
+
+.swiper-pagination-bullet {
+  background: #f4f3f5;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #7c3aed;
+}
+
+/* Responsive container */
+.food-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Optional: tweak font size or layout on smaller screens */
+@media (max-width: 600px) {
+  .food-title {
+    font-size: 1rem;
+  }
+
+  .food-card {
+    margin: auto;
+  }
+
+  .food-author {
+    font-size: 0.85rem;
+  }
+
+  .play-button {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #7c3aed;
+}
+
+.swiper-slide {
+  transition: transform 0.6s ease-in-out;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #7c3aed;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #4c1d95;
+}
+
+.swiper-pagination-bullet {
+  background: #caa5e0;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #7c3aed;
+}
