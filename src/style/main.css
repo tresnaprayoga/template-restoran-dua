@@ -1,0 +1,15 @@
+@import './navbar.css';
+@import './heroimage.css';
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  padding-top: 60px; /* Sesuaikan dengan tinggi navbar */
+}
+
+html {
+  scroll-behavior: smooth;
+}

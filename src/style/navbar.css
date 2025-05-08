@@ -1,0 +1,145 @@
+.navbar {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2a2a72;
+  width: 100px;
+}
+.navbar-logo img {
+  width: 100%;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  position: relative;
+  font-family: 'Poppins';
+  font-weight: normal;
+}
+
+.navbar-links a:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #6b48ff;
+  bottom: -5px;
+  left: 0;
+}
+
+.navbar-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-buttons button {
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.my-account-btn {
+  background-color: transparent;
+  border: 1px solid #6b48ff;
+  color: #6b48ff;
+}
+
+.signup-btn {
+  background-color: #6b48ff;
+  border: none;
+  color: #fff;
+}
+
+/* Hamburger Menu Icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 20px 30px;
+  }
+
+  .navbar-links {
+    gap: 20px;
+  }
+
+  .navbar-links a {
+    font-size: 14px;
+  }
+
+  .navbar-buttons button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+    flex-wrap: wrap;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    gap: 15px;
+  }
+
+  .navbar-links.active {
+    display: flex;
+    background-color: rgb(254, 217, 12);
+  }
+
+  .navbar-links a {
+    font-size: 16px;
+  }
+
+  .navbar-buttons {
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+  }
+
+  .navbar-buttons button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
