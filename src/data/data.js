@@ -72,6 +72,13 @@ const imagesGalery = [
   { src: '/14.jpeg', className: 'box2' },
 ];
 
+const aboutData = {
+  title: 'Cerita di Balik Setiap Rasa',
+  description:
+    'Signature Bites lahir dari kecintaan kami terhadap rasa yang otentik dan memuaskan. Diprakarsai oleh Steven Lee, kami percaya bahwa burger bukan sekadar makanan cepat saji—melainkan pengalaman rasa yang dibuat dengan hati. Dengan bahan berkualitas, patty juicy, dan racikan saus khas, setiap burger kami punya cerita. Dari rasa cheesy, pedas, hingga premium, semua dirancang untuk menggugah selera dan bikin kamu ingin kembali lagi.',
+  logo: '/4.jpg',
+};
+
 function dataHeroSection() {
   return heroSectiondata;
 }
@@ -88,4 +95,8 @@ function imageGalery() {
   return imagesGalery;
 }
 
-export { dataHeroSection, DataProdukSlide, MenuProduk, imageGalery };
+function AboutData() {
+  return aboutData;
+}
+
+export { dataHeroSection, DataProdukSlide, MenuProduk, imageGalery, AboutData };

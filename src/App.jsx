@@ -3,7 +3,9 @@ import Navbar from './component/navbar';
 import HeroSection from './component/HeroImage';
 import ListItem from './component/MenuProduk/ListItemProduk';
 import GaleriPicture from './component/Galery';
-import { dataHeroSection, DataProdukSlide, MenuProduk, imageGalery } from './data/data';
+import ContentSectionAbout from './component/About';
+import FooterSosial from './component/Footer';
+import { dataHeroSection, DataProdukSlide, MenuProduk, imageGalery, AboutData } from './data/data';
 import { useState } from 'react';
 import ServiceList from './component/ServiceMenu/ServiceList';
 
@@ -12,6 +14,7 @@ function App() {
   const [dataServcie, setDataService] = useState(() => DataProdukSlide());
   const [dataMenuProduk, setDataMenuProduk] = useState(() => MenuProduk());
   const [dataGalery, setDataGalery] = useState(() => imageGalery());
+  const [dataAbout, setDataAbout] = useState(() => AboutData());
   return (
     <div>
       <header>
@@ -29,11 +32,15 @@ function App() {
           <p>Cuma disini Burger yang disebut Signature</p>
           <ListItem listItem={dataMenuProduk} />
         </div>
-
         <div>
           <GaleriPicture images={dataGalery} />
         </div>
+        <ContentSectionAbout title={dataAbout.title} description={dataAbout.description} image={dataAbout.logo} />
       </main>
+
+      <footer>
+        <FooterSosial />
+      </footer>
     </div>
   );
 }

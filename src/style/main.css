@@ -3,6 +3,8 @@
 @import './service.css';
 @import './itemProduk.css';
 @import './galery.css';
+@import './contentabout.css';
+@import './footer.css';
 
 * {
   padding: 0;
