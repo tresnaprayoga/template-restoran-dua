@@ -2,7 +2,7 @@ import React from 'react';
 
 function ItemProduk({ image, title, price }) {
   return (
-    <div className='item-produk'>
+    <div className='item-produk' data-aos-duration='1000' data-aos-delay='100'>
       <div className='gallery-item'>
         <img src={image} alt='menu' data-aos='fade-up' />
       </div>
