@@ -1,7 +1,7 @@
 .galeri-section {
   padding: 2rem;
   text-align: center;
-  width: 75%;
+  width: 60%;
   margin: auto;
 }
 
@@ -20,8 +20,7 @@
 
 .galeri-layout {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto auto;
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
 
@@ -30,6 +29,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   margin: auto;
+  width: 100%;
 }
 
 .galeri-item img {

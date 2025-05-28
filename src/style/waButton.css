@@ -1,0 +1,46 @@
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.05);
+}
+
+.whatsapp-text {
+  font-size: 1rem;
+  color: #333;
+  margin-right: 0.5rem;
+  font-weight: 500;
+}
+
+.whatsapp-icon {
+  font-size: 2rem;
+  color: #25d366; /* Warna hijau WhatsApp */
+}
+
+@media (max-width: 768px) {
+  .whatsapp-button {
+    bottom: 15px;
+    right: 15px;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .whatsapp-text {
+    font-size: 0.9rem;
+  }
+
+  .whatsapp-icon {
+    font-size: 2rem;
+  }
+}

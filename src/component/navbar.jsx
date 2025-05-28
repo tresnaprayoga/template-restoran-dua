@@ -23,6 +23,7 @@ const Navbar = () => {
       {/* Menu Links */}
       <div className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
         <a href='#'>Promo</a>
+        <a href='#'>About</a>
         <a href='#'>Menu</a>
         <a href='#'>Galery</a>
         <a href='#'>Kontak</a>

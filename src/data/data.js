@@ -70,6 +70,8 @@ const imagesGalery = [
   { src: '/14.jpeg', className: 'box2' },
   { src: '/14.jpeg', className: 'box1' },
   { src: '/14.jpeg', className: 'box2' },
+  { src: '/14.jpeg', className: 'box1' },
+  { src: '/14.jpeg', className: 'box2' },
 ];
 
 const aboutData = {
