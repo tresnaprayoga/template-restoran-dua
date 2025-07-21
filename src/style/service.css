@@ -3,7 +3,7 @@
   font-family: 'Poppins';
   font-weight: normal;
   width: 70%;
-  margin: 30px auto;
+  margin: 200px auto;
 }
 
 .service-list h2 {
@@ -77,6 +77,9 @@
 
 /* Optional: tweak font size or layout on smaller screens */
 @media (max-width: 600px) {
+  .service-list {
+    margin: 100px auto;
+  }
   .food-title {
     font-size: 1rem;
   }

@@ -57,6 +57,9 @@
 
 /* Responsif */
 @media (max-width: 768px) {
+  .galeri-section {
+    width: 80%;
+  }
   .galeri-layout {
     grid-template-columns: 1fr;
   }

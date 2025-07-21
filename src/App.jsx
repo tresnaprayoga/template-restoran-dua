@@ -3,10 +3,10 @@ import Navbar from './component/navbar';
 import HeroSection from './component/HeroImage';
 import ListItem from './component/MenuProduk/ListItemProduk';
 import GaleriPicture from './component/Galery';
-import ContentSectionAbout from './component/About';
+import ContentAbout from './component/About';
 import FooterSosial from './component/Footer';
 import { dataHeroSection, DataProdukSlide, MenuProduk, imageGalery, AboutData } from './data/data';
-import { useEffect, useState } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import ServiceList from './component/ServiceMenu/ServiceList';
 import WhatsAppButton from './component/WaButton';
 import Aos from 'aos';
@@ -19,6 +19,14 @@ function App() {
       once: true,
     });
   }, []);
+
+  // Refs untuk tiap section
+  const promoRef = useRef(null);
+  const menuRef = useRef(null);
+  const galeryRef = useRef(null);
+  const aboutRef = useRef(null);
+  const kontakRef = useRef(null);
+
   const [dataHero, setDataHero] = useState(() => dataHeroSection());
   const [dataServcie, setDataService] = useState(() => DataProdukSlide());
   const [dataMenuProduk, setDataMenuProduk] = useState(() => MenuProduk());
@@ -27,25 +35,27 @@ function App() {
   return (
     <div>
       <header>
-        <Navbar />
+        <Navbar promoRef={promoRef} menuRef={menuRef} galeryRef={galeryRef} aboutRef={aboutRef} kontakRef={kontakRef} />
       </header>
       <main>
         <HeroSection slides={dataHero} />
         <WhatsAppButton />
-        <div className='service-list'>
+        <div ref={promoRef} className='service-list'>
           <h2 data-aos='slide-left'>Penawaran Spesial</h2>
           <p data-aos='slide-left'>Jangan lewatkan promo terbatas untuk rasa yang tak terlupakan</p>
           <ServiceList foodData={dataServcie} />
         </div>
-        <div className='produc-container'>
+        <div ref={menuRef} className='produc-container'>
           <h2>Signature Bites</h2>
           <p>Cuma disini Burger yang disebut Signature</p>
           <ListItem listItem={dataMenuProduk} />
         </div>
-        <div>
+        <div ref={galeryRef}>
           <GaleriPicture images={dataGalery} />
         </div>
-        <ContentSectionAbout title={dataAbout.title} description={dataAbout.description} image={dataAbout.logo} />
+        <div ref={aboutRef}>
+          <ContentAbout title={dataAbout.title} description={dataAbout.description} image={dataAbout.logo} />
+        </div>
       </main>
 
       <footer>

@@ -1,7 +1,7 @@
 .navbar {
   position: absolute;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 10px 40px;
   right: 0;
@@ -31,6 +31,7 @@
   position: relative;
   font-family: 'Poppins';
   font-weight: normal;
+  cursor: pointer;
 }
 
 .navbar-links a:hover::after {
@@ -86,6 +87,7 @@
 @media (max-width: 1024px) {
   .navbar {
     padding: 20px 30px;
+    justify-content: space-between;
   }
 
   .navbar-links {
@@ -124,7 +126,6 @@
 
   .navbar-links.active {
     display: flex;
-    background-color: rgb(254, 217, 12);
   }
 
   .navbar-links a {

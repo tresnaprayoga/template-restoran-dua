@@ -1,7 +1,12 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 
-const Navbar = () => {
+const Navbar = ({ promoRef, menuRef, galeryRef, aboutRef, kontakRef }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const scrollToSection = (ref) => {
+    setIsMenuOpen(false); // Tutup menu
+    ref.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -22,10 +27,10 @@ const Navbar = () => {
 
       {/* Menu Links */}
       <div className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
-        <a href='#'>Promo</a>
-        <a href='#'>About</a>
-        <a href='#'>Menu</a>
-        <a href='#'>Galery</a>
+        <a onClick={() => scrollToSection(promoRef)}>PROMO</a>
+        <a onClick={() => scrollToSection(aboutRef)}>ABOUT US</a>
+        <a onClick={() => scrollToSection(menuRef)}>MENU</a>
+        <a onClick={() => scrollToSection(galeryRef)}>GALERY</a>
         <a href='#'>Kontak</a>
       </div>
 
