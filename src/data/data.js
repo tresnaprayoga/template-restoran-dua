@@ -81,6 +81,30 @@ const aboutData = {
   logo: '/4.jpg',
 };
 
+const cardNews = [
+  {
+    image: '/1.png',
+    date: 'DECEMBER 21, 2024',
+    title: 'Essential Tips for Successfully Running a Marathon',
+    description:
+      '"Lorem ipsum" adalah teks pengganti atau teks tiruan yang biasa digunakan dalam desain grafis dan penataan huruf untuk melihat bagaimana sebuah halaman akan terlihat sebelum ada isi sebenarnya. Teks ini menampilkan teks Latin acak dan digunakan untuk memberikan gambaran tata letak, bukan untuk konten asli',
+  },
+  {
+    image: '/4.png',
+    date: 'DECEMBER 21, 2024',
+    title: 'How to train for a marathon',
+    description:
+      '"Lorem ipsum" adalah teks pengganti atau teks tiruan yang biasa digunakan dalam desain grafis dan penataan huruf untuk melihat bagaimana sebuah halaman akan terlihat sebelum ada isi sebenarnya. Teks ini menampilkan teks Latin acak dan digunakan untuk memberikan gambaran tata letak, bukan untuk konten asli',
+  },
+  {
+    image: '/3.png',
+    date: 'DECEMBER 21, 2024',
+    title: 'understand how to practice soccer well',
+    description:
+      '"Lorem ipsum" adalah teks pengganti atau teks tiruan yang biasa digunakan dalam desain grafis dan penataan huruf untuk melihat bagaimana sebuah halaman akan terlihat sebelum ada isi sebenarnya. Teks ini menampilkan teks Latin acak dan digunakan untuk memberikan gambaran tata letak, bukan untuk konten asli',
+  },
+];
+
 function dataHeroSection() {
   return heroSectiondata;
 }
@@ -101,4 +125,8 @@ function AboutData() {
   return aboutData;
 }
 
-export { dataHeroSection, DataProdukSlide, MenuProduk, imageGalery, AboutData };
+function CardNews() {
+  return cardNews;
+}
+
+export { dataHeroSection, DataProdukSlide, MenuProduk, imageGalery, AboutData, CardNews };

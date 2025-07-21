@@ -4,7 +4,7 @@ function GaleriPicture({ images }) {
   return (
     <section className='galeri-section' data-aos-duration='1000' data-aos-delay='100'>
       <div className='galeri-title' data-aos='slide-left'>
-        <h2>Galery</h2>
+        <h2>GALERY</h2>
         <p>Intip lezatnya sajian Burger terbaik kami dalam setiap bidikan</p>
       </div>
 

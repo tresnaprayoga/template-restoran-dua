@@ -1,0 +1,128 @@
+.card-news-restoran-satu {
+  margin: auto;
+  background-color: #4b2e2e;
+  padding: 20px;
+}
+
+.card-news-restoran-satu h2 {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: normal;
+  color: white;
+  margin-top: 20px;
+  font-family: sans-serif;
+  font-weight: normal;
+}
+
+.card-news-restoran-satu p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+  font-weight: normal;
+  text-align: center;
+  color: white;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.item-restoran-satu {
+  width: 350px;
+}
+
+.item-img-restoran-satu {
+  width: 100%;
+}
+
+.item-restoran-satu img {
+  width: 100%;
+}
+
+.item-content-restoran-satu {
+  padding: 15px;
+}
+
+.item-date {
+  font-size: 0.9em;
+  color: #ccc;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+  font-weight: normal;
+}
+
+.item-title-restoran-satu {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: normal;
+}
+
+.item-description-restoran-satu {
+  font-size: 0.9em;
+  color: #ccc;
+  line-height: 1.5;
+  font-family: sans-serif;
+  font-weight: normal;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .card-news {
+    padding: 15px;
+  }
+
+  .section-title {
+    font-size: 1.5em;
+  }
+
+  .list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item-restoran-satu {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .item-content-restoran-satu {
+    padding: 10px;
+  }
+
+  .item-title-restoran-satu {
+    font-size: 1.1em;
+  }
+
+  .item-description-restoran-satu {
+    font-size: 0.85em;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.2em;
+  }
+
+  .item-content-restoran-satu {
+    padding: 8px;
+  }
+
+  .item-date {
+    font-size: 0.8em;
+  }
+
+  .item-title-restoran-satu {
+    font-size: 1em;
+  }
+
+  .item-description-restoran-satu {
+    font-size: 0.8em;
+  }
+}

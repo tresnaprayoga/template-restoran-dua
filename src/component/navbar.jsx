@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 
-const Navbar = ({ promoRef, menuRef, galeryRef, aboutRef, kontakRef }) => {
+const Navbar = ({ promoRef, menuRef, galeryRef, aboutRef, kontakRef, newsRef }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const scrollToSection = (ref) => {
@@ -31,7 +31,8 @@ const Navbar = ({ promoRef, menuRef, galeryRef, aboutRef, kontakRef }) => {
         <a onClick={() => scrollToSection(aboutRef)}>ABOUT US</a>
         <a onClick={() => scrollToSection(menuRef)}>MENU</a>
         <a onClick={() => scrollToSection(galeryRef)}>GALERY</a>
-        <a href='#'>Kontak</a>
+        <a onClick={() => scrollToSection(newsRef)}>NEWS</a>
+        <a onClick={() => scrollToSection(kontakRef)}>KONTAK</a>
       </div>
 
       {/* <div className='navbar-buttons'>
